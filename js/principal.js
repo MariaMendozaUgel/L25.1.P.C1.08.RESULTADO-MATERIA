@@ -28,6 +28,7 @@ salon.procesarEstudiante(estudiante6);
 salon.procesarEstudiante(estudiante7);
 salon.procesarEstudiante(estudiante8);
 
-alert("Cantidad de aprobados: " + salon.totalAprobados());
-alert("Cantidad de reprobados: " + salon.totalReprobados());
-alert("Nota promedio de la seccion: " + salon.promedio());
+let salida = document.getElementById("salida");
+salida.innerHTML = `Cantidad de aprobados: ${salon.totalAprobados()}<br>`;
+salida.innerHTML += `Cantidad de reprobados: ${salon.totalReprobados()}<br>`;
+salida.innerHTML += `Promedio: ${salon.promedio()}%`;
