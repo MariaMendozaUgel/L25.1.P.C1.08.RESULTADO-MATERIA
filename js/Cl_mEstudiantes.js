@@ -1,5 +1,5 @@
-export default class Cl_estudiantes {
-    constructor(cedula, nota) {
+export default class Cl_mEstudiantes {
+    constructor({ cedula, nota }) {
         this.cedula = cedula;
         this.nota = nota;
     }

@@ -6,7 +6,28 @@
     <title>Document</title>
 </head>
 <body>
-    <div id="salida"></div>
-    <script src="./js/principal.js" type="module"></script>
+    <section id="mainForm">
+        <h3>resultado materia</h3>
+        <table id="mainForm_tabla">
+            <tr>
+                <th>cedula</th>
+                <th>nota</th>
+            </tr>
+        </table>
+        <h5>Cantidad de aprobados: <span id="mainForm_lblAprobados">?</span></h5>
+        <h5>Cantidad de reprobados: <span id="mainForm_lblReprobados">?</span></h5>
+        <h5>Nota promedio: <span id="mainForm_lblPromedio">?</span></h5>
+        <button id="mainForm_btAgregar">agregar</button>
+    </section>
+    <section id="estudianteForm">
+        <h3>Datos del estudiante</h3>
+        <input type="text" id="estudianteForm_inCedula" placeholder="cedula">
+        <input type="text" id="estudianteForm_inNota" placeholder="nota">
+        <button id="estudianteForm_btAceptar">aceptar</button>
+    </section>
 </body>
+<script type="module">
+    import principal from "./js/principal.js"
+    new principal();
+</script>
 </html>

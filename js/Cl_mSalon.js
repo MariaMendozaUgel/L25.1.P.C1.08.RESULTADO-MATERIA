@@ -1,5 +1,5 @@
-import Cl_estudiantes from "./Cl_estudiantes.js";
-export default class Cl_salon {
+import Cl_mEstudiantes from "./Cl_mEstudiantes.js";
+export default class Cl_mSalon {
     constructor() {
         this.cantEstudiantes = 0;
         this.acumNota = 0;
